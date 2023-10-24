@@ -5,7 +5,7 @@ body {
     
 }
 p {
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'SF Pro Display', bold;
     background: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
