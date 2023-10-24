@@ -5,6 +5,7 @@ body {
     
 }
 p {
+    font-size: 400;
     font-family: 'SF Pro Display', sans-serif;
     background: #ffffff;
     -webkit-background-clip: text;
