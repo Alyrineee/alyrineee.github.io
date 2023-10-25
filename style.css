@@ -1,4 +1,5 @@
 body {
+	font-family:"SF Pro Display Bold",sans-serif;
 	margin-left: 10;
 	padding: 0;
 	font-size:20px;
@@ -14,11 +15,13 @@ body {
     font-style: normal;
 }
 .welcome {
+font-family:"SF Pro Display Bold",sans-serif;
     background: #FFFFFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 .blue {
+    font-family:"SF Pro Display Bold",sans-serif;
     background: linear-gradient(90deg,#002bff, #ffffff,#002bff);
     background-size: 200% auto;
     background-clip: text;
@@ -32,11 +35,13 @@ body {
   }
 
 .forumname{
+    font-family:"SF Pro Display Bold",sans-serif;
     background: rgb(100,100,100);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .glow-on-hover {
+    font-family:"SF Pro Display Bold",sans-serif;
     font-size: 10px;
     margin-left:100px;
     width: 75px;
