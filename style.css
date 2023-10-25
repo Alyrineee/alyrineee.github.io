@@ -4,6 +4,15 @@ body {
 	font-size:20px;
     
 }
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
+        url('SFProDisplay-Bold.woff2') format('woff2'),
+        url('SFProDisplay-Bold.woff') format('woff'),
+        url('SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 .welcome {
     background: #FFFFFF;
     font-family:"SF Pro Display",sans-serif;
