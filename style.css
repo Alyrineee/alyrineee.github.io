@@ -15,12 +15,10 @@ body {
 }
 .welcome {
     background: #FFFFFF;
-    font-family:"SF Pro Display",sans-serif;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 .blue {
-    font-family: "SF Pro Display",sans-serif;
     background: linear-gradient(90deg,#002bff, #ffffff,#002bff);
     background-size: 200% auto;
     background-clip: text;
@@ -39,7 +37,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 .glow-on-hover {
-    font-family:"SF Pro Display",sans-serif;
     font-size: 10px;
     margin-left:100px;
     width: 75px;
