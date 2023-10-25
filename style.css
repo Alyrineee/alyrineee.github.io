@@ -1,5 +1,6 @@
 body {
 	font-family:"SF Pro Display Bold",sans-serif;
+	font-weight: bold;
 	margin-left: 10;
 	padding: 0;
 	font-size:20px;
@@ -15,7 +16,8 @@ body {
     font-style: normal;
 }
 .welcome {
-font-family:"SF Pro Display Bold",sans-serif;
+    font-family:"SF Pro Display Bold",sans-serif;
+    font-weight: bold;
     background: #FFFFFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -23,6 +25,7 @@ font-family:"SF Pro Display Bold",sans-serif;
 .blue {
     @import url("style.css");
     font:15px, 'San Francisco Pro', 'San Francisco Pro Display Bold',sans-serif;
+    font-weight: 700;
     background: linear-gradient(90deg,#002bff, #ffffff,#002bff);
     background-size: 200% auto;
     background-clip: text;
