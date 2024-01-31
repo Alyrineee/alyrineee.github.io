@@ -6,7 +6,7 @@ const mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh);
 // Камера
 const sizes = {
-	width: window.innerWidth/3,
+	width: window.innerWidth,
 	height: window.innerHeight,
 };
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
