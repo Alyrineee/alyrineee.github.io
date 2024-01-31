@@ -1,1 +1,1 @@
-# for58
+# table tennis testnet
