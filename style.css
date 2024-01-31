@@ -1,130 +1,15 @@
-body {
-    font-family:"SF Pro Display Bold",sans-serif;
-    font-weight: 1000;
-	margin-left: 20px;
-	padding: 0;
-
-    
+*{
+  margin: 0;
+  padding: 0;
 }
-.welcome {
-	font-size:50px;
-    font-family:"SF Pro Display Bold",sans-serif;
-    font-weight: 900;
-    background: #FFFFFF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+html,body
+{
+  overflow: hidden;
 
-.data{
-    padding-bottom: 20%;
-    margin-left: 175px;
-    position: relative;
 }
-.username{
-    margin-left: 380px;
-    font-size:25px;
-    font-family: Monospace;
-
-    background: #FFFFFF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-}
-.datauser{
-    margin-top: 25px;  
-}
-.data img{
-    width: 500px;
-   height: 500px;
-    position: absolute;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-.data:before {
-    content: '';
-    background: linear-gradient(90deg,  #002bff, #ffffff,#002bff);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(21.3% + 4px);
-    height: calc(99% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 1;
-    transition: opacity .3s ease-in-out;
-    border-radius: 50%;
-}
-.blue {
-    font-size:50px;
-    font-family:"SF Pro Display Bold",sans-serif;
-    font-weight: 900;
-    background: linear-gradient(90deg,#002bff, #ffffff,#002bff);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textflow 5s linear infinite;
-  }
-  @keyframes textflow {
-    from {background-position: 0% center}         
-    to {background-position: 200% center}
-  }
-
-.glow-on-hover {
-    font-family:"SF Pro Display Bold",sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-
-    margin-left:334px;
-    margin-top:50px;
-    width: 187px;
-    height: 62px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 25px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(90deg,  #002bff, #ffffff,#002bff);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 1;
-    transition: opacity .3s ease-in-out;
-    border-radius: 25px;
-}
-
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 25px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+.canvas
+{
+  position: fixed;
+  top: 0;
+  left: 30%;
 }
