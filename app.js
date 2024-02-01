@@ -1,4 +1,10 @@
 const scene = new THREE.Scene();
+scene.background = new THREE.Color('skyblue');
+scene.fog = new THREE.Fog('0x76456c',0.1,8);
+var loader = new THREE.TextureLoader();
+loader.load('theme.jpg', function(texture){
+	scene.background = texture;
+})
 // Объект
 const geometry = new THREE.BoxGeometry(1, 1, 1); 
 const material = new THREE.MeshBasicMaterial({ color: 'purple' }); 
@@ -15,6 +21,7 @@ camera.position.y = 1;
 scene.add(camera);
 const canvas = document.querySelector('.canvas');
 const renderer = new THREE.WebGLRenderer({ canvas });
+
 renderer.setSize(sizes.width, sizes.height);
 renderer.render(scene, camera);
 
