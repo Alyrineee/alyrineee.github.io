@@ -1,29 +1,43 @@
-const scene = new THREE.Scene();
+var scene = new THREE.Scene();
 scene.background = new THREE.Color('skyblue');
 scene.fog = new THREE.Fog('0x76456c',0.1,8);
 var loader = new THREE.TextureLoader();
+
 loader.load('theme.jpg', function(texture){
 	scene.background = texture;
-})
+});
 // Объект
-const geometry = new THREE.BoxGeometry(1, 1, 1); 
-const material = new THREE.MeshBasicMaterial({ color: 'purple' }); 
-const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
-// Камера
 const sizes = {
 	width: window.innerWidth,
 	height: window.innerHeight,
 };
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 3; 
-camera.position.y = 1;
-scene.add(camera);
-const canvas = document.querySelector('.canvas');
-const renderer = new THREE.WebGLRenderer({ canvas });
+// init
 
-renderer.setSize(sizes.width, sizes.height);
-renderer.render(scene, camera);
+const camera = new THREE.PerspectiveCamera( 70, sizes.width / sizes.height, 0.01, 10 );
+camera.position.z = 1;
+
+
+const geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+const material = new THREE.MeshNormalMaterial();
+
+const mesh = new THREE.Mesh( geometry, material );
+scene.add( mesh );
+
+const renderer = new THREE.WebGLRenderer( { antialias: true } );
+renderer.setSize( sizes.width, sizes.height );
+renderer.setAnimationLoop( animation );
+document.body.appendChild( renderer.domElement );
+
+// animation
+
+function animation( time ) {
+
+	mesh.rotation.x = time / 2000;
+	mesh.rotation.y = time / 1000;
+
+	renderer.render( scene, camera );
+
+}
 
 window.addEventListener('resize', () => {
 	sizes.width  = window.innerWidth;
