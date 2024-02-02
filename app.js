@@ -3,12 +3,12 @@ scene.background = new THREE.Color('skyblue');
 scene.fog = new THREE.Fog('0x76456c',0.1,8);
 var loader = new THREE.TextureLoader();
 
-loader.load('theme.jpg', function(texture){
-	scene.background = texture;
-});
+//loader.load('theme.jpg', function(texture){
+	//scene.background = texture;
+//});
 // Объект
 const sizes = {
-	width: window.innerWidth,
+	width: window.innerWidth/3,
 	height: window.innerHeight,
 };
 // init
@@ -40,7 +40,7 @@ function animation( time ) {
 }
 
 window.addEventListener('resize', () => {
-	sizes.width  = window.innerWidth;
+	sizes.width  = window.innerWidth/3;
 	sizes.height  = window.innerHeight;
 	camera.aspect = sizes.width/sizes.height;
 	camera.updateProjectionMatrix();
