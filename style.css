@@ -12,3 +12,16 @@ html,body
   position: fixed;
 
 }
+.ton-connect{
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 1000px;
+  background: none;
+  border: none;
+  border-radius: 1em;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 150%;
+  padding: 20px;
+}
