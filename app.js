@@ -8,7 +8,7 @@ var loader = new THREE.TextureLoader();
 //});
 // Объект
 const sizes = {
-	width: window.innerWidth/3,
+	width: window.innerWidth,
 	height: window.innerHeight,
 };
 // init
@@ -40,7 +40,7 @@ function animation( time ) {
 }
 
 window.addEventListener('resize', () => {
-	sizes.width  = window.innerWidth/3;
+	sizes.width  = window.innerWidth;
 	sizes.height  = window.innerHeight;
 	camera.aspect = sizes.width/sizes.height;
 	camera.updateProjectionMatrix();
