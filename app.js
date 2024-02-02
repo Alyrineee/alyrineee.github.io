@@ -2,6 +2,10 @@ var scene = new THREE.Scene();
 scene.background = new THREE.Color('skyblue');
 scene.fog = new THREE.Fog('0x76456c',0.1,8);
 var loader = new THREE.TextureLoader();
+
+//loader.load('theme.jpg', function(texture){
+	//scene.background = texture;
+//});
 // Объект
 const sizes = {
 	width: window.innerWidth,
